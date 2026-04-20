@@ -59,6 +59,8 @@ animation: bouger 2s alternate infinite;
 .titre h1 {
     font-size: 5rem;
     color: #8B6F47; /* Marron clair */
+    opacity: 0.5;
+    font-weight: 900;
 
 }
 
@@ -82,7 +84,6 @@ animation: bouger 2s alternate infinite;
     width: 30%;
     background: #b8aca1; 
     padding: 30px 20px;
-
 }
 .colonne-gauche h2 {
     background: #8e8177;
@@ -105,7 +106,7 @@ hr {
 .ligne_vertical
 {
 border-left: 4px dashed #5C4A3A;
-height: 900px;
+height: 1700px;
 }
 .colonne-droite {
     width: 70%;
@@ -143,13 +144,13 @@ margin-top: 10px;
 }
 .max {
     width: 200px;
-    background-color:white;
+    background-color:#8e8177;
     height: 20px;
     border-radius: 10px;
 
 }
 .valeur{
-    width: 95%;
+    width: 85%;
     height: 20px;
     background-color: rgb(112, 85, 41);
     border-radius: 10px;
@@ -162,11 +163,31 @@ margin-top: 10px;
 }
 .valeur2 
 {
-   width: 70%;
+   width: 97%;
     height: 20px;
     background-color: rgb(82, 74, 44);
     border-radius: 10px;
 }
+.titre hr
+{
+height: 3px;
+background-color: #5C4A3A;
 
+}
+footer
+{
+    background-color: #e6e0db;
+     display: flex;
+     gap: 10px;
 
-   
+}
+.code-QR img
+{
+border-radius: 10px;
+height: 250px;
+width: 300px ;
+}
+.code-QR
+{
+    text-align: center;
+}
