@@ -1,123 +1,210 @@
-
-
+/* Style général de toute la page */
 body {
     background: #f5f5f5;
-    font-family:'Times New Roman', Times, serif;
+    /* Couleur de fond */
+    font-family: 'Times New Roman', Times, serif;
+    /* Police du texte */
     margin: 0;
+    /* Supprime les marges par défaut */
     padding: 0;
+    /* Supprime les espaces internes */
     box-sizing: border-box;
+    /* Inclut padding + border dans la taille */
 }
 
-.container 
-{
-     max-width: 95%;
-    margin: 20px auto; /*Centre toute la page box-shadow: 0 0 15px rgba(0,0,0,0.1); */
+/*CONTENEUR PRINCIPAL */
+
+.container {
+    max-width: 95%;
+    /* Largeur maximale */
+    margin: 20px auto;
+    /* Centre la page horizontalement */
     background: white;
+    /* Fond blanc */
     padding: 30px;
+    /* Espacement interne */
+    transition: 0.3s;
+    /* Animation douce */
 }
 
-/* LE HEADER : bande du haut sur 100% */
+/* Effet au survol */
+.container:hover {
+    transform: scale(1.02);
+    /* Agrandit légèrement */
+}
+
+
+/* HEADER (HAUT DE PAGE)*/
+
 .header {
     display: flex;
-    background: #e6e0db; /* Beige clair comme l'image */
+    /* Met les éléments en ligne */
+    background: #e6e0db;
     align-items: center;
+    /* Centre verticalement */
     gap: 30px;
-   
+    /* Espace entre les éléments */
 }
 
+
+/* IMAGE PROFIL */
 .img {
-    width: 30%; /* Comme la colonne de gauche en dessous */
-    margin-left: 10%;
+    width: 30%;
+    margin-left: 15px;
 }
 
-
-
-.img img{
-    width: 380px;
-    border-radius: 150px 150px 0 0; /* Effet arrondi en haut comme l'image */
+.img img {
+    width: 350px;
+    /* Taille image */
+    border-radius: 150px 150px 0 0;
+    /* Arrondi en haut de facons ronde */
     border: 5px solid white;
-    position: relative;
-animation: bouger 2s alternate infinite;
-
-}
-@keyframes bouger 
-{
-    from
-    {
-        right:0 ;
-    }
-    to 
-    {
-        right:50px;
-    }
+    /* Bordure blanche */
 }
 
+
+/* TITRE PRINCIPAL */
 .titre {
     width: 70%;
 }
 
 .titre h1 {
     font-size: 5rem;
-    color: #8B6F47; /* Marron clair */
-    opacity: 0.5;
-    font-weight: 900;
-
+    color: #8B6F47;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Ombre */
+    margin: 20px 0;
 }
 
+
+/* SOUS-TITRE (métier) */
 .sous_titre {
     display: inline-block;
-    background: #5C4A3A; /* Marron foncé */
+    /* Permet padding */
+    background: #5C4A3A;
     color: white;
     padding: 8px 20px;
     border-radius: 5px;
     font-weight: 700;
     margin: 10px 100px;
-    
 }
 
-/* LES 2 COLONNES EN DESSOUS */
+/* STRUCTURE PRINCIPALE (2 COLONNES)*/
+
 .content {
     display: flex;
+    /* Active les colonnes */
 }
 
+
+/* COLONNE GAUCHE */
 .colonne-gauche {
     width: 30%;
-    background: #b8aca1; 
+    background: #b8aca1;
     padding: 30px 20px;
 }
+
+/* Titres gauche */
 .colonne-gauche h2 {
     background: #8e8177;
-    color:aliceblue;
+    color: aliceblue;
     border-radius: 100%;
+    /* Forme ronde */
     text-align: center;
     margin: 4px;
 }
-.coordonnee img
-{
-border-radius: 25%;
-height: 4%;
-width: 6%;
-}
-hr {
-    border: none;
-    border-top: 4px dashed #5C4A3A ;
+
+/* Images coordonnées (icônes) */
+.coordonnee img {
+    border-radius: 25%;
+    height: 4%;
+    width: 6%;
 }
 
-.ligne_vertical
-{
-border-left: 4px dashed #5C4A3A;
-height: 1700px;
+/* QR Code */
+.code-QR {
+    text-align: center;
 }
+
+.code-QR img {
+    border-radius: 10px;
+    height: 250px;
+    width: 300px;
+}
+
+/* Ligne horizontale */
+hr {
+    border: none;
+    border-top: 4px dashed #5C4A3A;
+    /* Trait pointillé */
+}
+
+/* Ligne verticale */
+.ligne_vertical {
+    border-left: 4px dashed #5C4A3A;
+    height: 1700px;
+    /* Hauteur fixe */
+}
+
+/* LANGUES*/
+
+.item {
+    display: flex;
+    margin-top: 10px;
+}
+
+.max {
+    width: 200px;
+    background-color: #8e8177;
+    height: 20px;
+    border-radius: 10px;
+}
+
+/* Niveau 1 */
+.valeur {
+    width: 85%;
+    height: 20px;
+    background-color: rgb(112, 85, 41);
+    border-radius: 10px;
+}
+
+/* Niveau 2 */
+.valeur1 {
+    width: 60%;
+    height: 20px;
+    background-color: rgb(150, 127, 69);
+    border-radius: 10px;
+}
+
+/* Niveau 3 */
+.valeur2 {
+    width: 97%;
+    height: 20px;
+    background-color: rgb(82, 74, 44);
+    border-radius: 10px;
+}
+
+/* QUALITÉS*/
+
+.qualité p {
+    background: #060606;
+    color: aliceblue;
+    border-radius: 20%;
+    text-align: center;
+}
+
+
+/* COLONNE DROITE */
+
 .colonne-droite {
     width: 70%;
     padding: 30px;
-     font-size: 20px;
-     color: #5C4A3A;
-}
-.colonne-droite h3 {
-color: black;
+    font-size: 20px;
+    color: #5C4A3A;
+    background-color: white;
 }
 
+/* Titres section */
 .colonne-droite h2 {
     background: #5C4A3A;
     color: rgb(247, 244, 244);
@@ -126,68 +213,51 @@ color: black;
     margin: 20px 0 15px 0;
     text-align: center;
 }
-h3
-{
+
+/* Sous-titres */
+.colonne-droite h3 {
+    color: black;
     text-align: center;
 }
 
-.qualité p
-{
-   background: #060606;
-    color:aliceblue;
-    border-radius: 20%;
-    text-align: center;
-}
-.item {
-display: flex;
-margin-top: 10px;
-}
-.max {
-    width: 200px;
-    background-color:#8e8177;
-    height: 20px;
-    border-radius: 10px;
+/* FOOTER*/
 
-}
-.valeur{
-    width: 85%;
-    height: 20px;
-    background-color: rgb(112, 85, 41);
-    border-radius: 10px;
-}
-.valeur1{
-   width: 60%;
-    height: 20px;
-    background-color: rgb(150, 127, 69);
-    border-radius: 10px;  
-}
-.valeur2 
-{
-   width: 97%;
-    height: 20px;
-    background-color: rgb(82, 74, 44);
-    border-radius: 10px;
-}
-.titre hr
-{
-height: 3px;
-background-color: #5C4A3A;
-
-}
-footer
-{
+footer {
     background-color: #e6e0db;
-     display: flex;
-     gap: 10px;
+    display: flex;
+    gap: 10px;
+}
 
+
+
+
+/* ANIMATIONS (APPARITION)*/
+
+/* Effet apparition */
+.apparition {
+    opacity: 0; /* Invisible au départ */
+    transform: translateY(40px); /* Descendu */
+    animation: fadeUp 1s ease forwards; /* Animation */
 }
-.code-QR img
-{
-border-radius: 10px;
-height: 250px;
-width: 300px ;
+
+/* Animation montée */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Revient à position normale */
+        
+    }
 }
-.code-QR
-{
-    text-align: center;
+
+/* Délais d’apparition */
+.experience_apparition {
+    animation-delay: 1s;
+}
+
+.Formation_apparition {
+    animation-delay: 3s;
+}
+
+.competence_apparition {
+    animation-delay: 5s;
 }
