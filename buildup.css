@@ -1,30 +1,20 @@
 /* Style général de toute la page */
 body {
-    background: #f5f5f5;
-    /* Couleur de fond */
-    font-family: 'Times New Roman', Times, serif;
-    /* Police du texte */
-    margin: 0;
-    /* Supprime les marges par défaut */
-    padding: 0;
-    /* Supprime les espaces internes */
-    box-sizing: border-box;
-    /* Inclut padding + border dans la taille */
+    background: #f5f5f5; /* Couleur de fond */
+    font-family: 'Times New Roman', Times, serif;/* Police du texte */
+    margin: 0;/* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espaces internes */
+    box-sizing: border-box; /* Inclut padding + border dans la taille */
 }
 
 /*CONTENEUR PRINCIPAL */
 
 .container {
-    max-width: 95%;
-    /* Largeur maximale */
-    margin: 20px auto;
-    /* Centre la page horizontalement */
-    background: white;
-    /* Fond blanc */
-    padding: 30px;
-    /* Espacement interne */
-    transition: 0.3s;
-    /* Animation douce */
+    max-width: 95%; /* Largeur maximale */
+    margin: 20px auto; /* Centre la page horizontalement */
+    background: white; /* Fond blanc */
+    padding: 30px;  /* Espacement interne */
+    transition: 0.3s; /* Animation douce */
 }
 
 /* Effet au survol */
@@ -37,13 +27,10 @@ body {
 /* HEADER (HAUT DE PAGE)*/
 
 .header {
-    display: flex;
-    /* Met les éléments en ligne */
+    display: flex;/* Met les éléments en ligne */
     background: #e6e0db;
-    align-items: center;
-    /* Centre verticalement */
-    gap: 30px;
-    /* Espace entre les éléments */
+    align-items: center;/* Centre verticalement */
+    gap: 100px; /* Espace entre les éléments */
 }
 
 
@@ -54,12 +41,10 @@ body {
 }
 
 .img img {
-    width: 350px;
-    /* Taille image */
-    border-radius: 150px 150px 0 0;
-    /* Arrondi en haut de facons ronde */
-    border: 5px solid white;
-    /* Bordure blanche */
+    width: 350px; /* Taille image */
+    height: 500px;
+    border-radius: 150px 150px 0 0;/* Arrondi en haut de facons ronde */
+    border: 5px solid white; /* Bordure blanche */
 }
 
 
@@ -67,20 +52,21 @@ body {
 .titre {
     width: 70%;
 }
-
+.titre p{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
 .titre h1 {
     font-size: 5rem;
     color: #8B6F47;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    /* Ombre */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre */
     margin: 20px 0;
 }
 
 
 /* SOUS-TITRE (métier) */
 .sous_titre {
-    display: inline-block;
-    /* Permet padding */
+    display: inline-block;/* Permet padding */
     background: #5C4A3A;
     color: white;
     padding: 8px 20px;
@@ -92,8 +78,7 @@ body {
 /* STRUCTURE PRINCIPALE (2 COLONNES)*/
 
 .content {
-    display: flex;
-    /* Active les colonnes */
+    display: flex;/* Active les colonnes */
 }
 
 
@@ -108,8 +93,7 @@ body {
 .colonne-gauche h2 {
     background: #8e8177;
     color: aliceblue;
-    border-radius: 100%;
-    /* Forme ronde */
+    border-radius: 100%;/* Forme ronde */
     text-align: center;
     margin: 4px;
 }
@@ -135,15 +119,13 @@ body {
 /* Ligne horizontale */
 hr {
     border: none;
-    border-top: 4px dashed #5C4A3A;
-    /* Trait pointillé */
+    border-top: 4px dashed #5C4A3A;/* Trait pointillé */
 }
 
 /* Ligne verticale */
 .ligne_vertical {
     border-left: 4px dashed #5C4A3A;
-    height: 1700px;
-    /* Hauteur fixe */
+    height: 1700px; /* Hauteur fixe */
 }
 
 /* LANGUES*/
@@ -250,14 +232,86 @@ footer {
 }
 
 /* Délais d’apparition */
-.experience_apparition {
+.apparition:nth-child(1) {
     animation-delay: 1s;
 }
 
-.Formation_apparition {
+.apparition:nth-child(2) {
     animation-delay: 3s;
 }
 
-.competence_apparition {
+.apparition:nth-child(3) {
     animation-delay: 5s;
+}
+
+
+
+/* Checkbox cachée */
+#menu {
+    display: none;
+}
+
+/* Position du bouton */
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.menu {
+    margin-top: 60px;
+    margin-right: 30px;
+}
+
+/* Bouton ☰ */
+.ouvert {
+    background: #544627c1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Menu caché */
+.contenus {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100vh;
+    background:#5C4A3A;
+    padding: 60px 20px;
+    transition: 0.3s;
+}
+
+/* Quand checkbox cochée → menu visible */
+#menu:checked ~ .contenus {
+    right: 0;
+}
+
+/* Bouton fermer */
+.fermer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Liens */
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-content a:hover {
+    background: #f5f5f4;
+    padding-left: 10px;
 }
