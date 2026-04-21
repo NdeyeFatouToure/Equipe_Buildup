@@ -19,7 +19,7 @@ body {
 /* LE HEADER : bande du haut sur 100% */
 .header {
     display: flex;
-    background: #e6e0db; /* Beige clair comme l'image */
+    background:#E8DDD0; /* Beige clair comme l'image */
     align-items: center;
     gap: 30px;
    

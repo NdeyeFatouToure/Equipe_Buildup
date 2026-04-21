@@ -1,0 +1,313 @@
+header {
+    background-color: #5C4A3A;
+    height: 55px;
+}
+
+body {
+    background-color:#ffedd1;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    list-style: none;
+    padding-top: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.entete {
+    text-align: center;
+}
+
+h1 {
+    font-size: 555%;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.06em;
+}
+
+.trait {
+    display: flex;
+    width: 15%; 
+    margin-left: 41%;
+    margin-top:-3% ;
+    align-items: center; /* Aligne le losange verticalement sur la ligne */
+    justify-content: center; /* Centre le losange horizontalement */
+    height: 1px; 
+    background-color: #5C4A3A; /
+}
+
+.losange {
+    width: 10px; /* Taille du losange */
+    height: 10px;
+    background-color:#5C4A3A; /* Même couleur que la ligne */
+    transform: rotate(45deg); /* Tourne le carré pour en faire un losange */
+    border: 2px solid #fff; /* Optionnel : un petit bord blanc pour bien détacher le losange */
+}
+
+.entete2 {
+    font-style:italic;
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+button,a{
+    text-decoration: none;
+    color: #fff;
+}
+.section1{
+    width: 90%;
+    border: 1px solid #8b5a2b;
+    justify-content: center;
+    margin-left: 77px;
+    margin-top: 39px;
+    margin-bottom: 91px;
+    padding-bottom: 51px;
+    padding-top: 41px;
+    border-radius: 1%;
+    background-color:#f0ebe4;
+}
+button {
+    display: inline;
+    justify-content: center;
+    gap:1%;
+    height: 47px;
+    border-radius: 7%;
+    font-size: 81% ;
+    padding: 10px;
+    background-color: #5C4A3A;
+    margin-top: 33px;
+    color: #fff;
+}
+
+.introduction {
+    max-width: 1333px;
+    margin: 0 auto; /* Centre tout le bloc */
+    font-family: 'Serif', sans-serif;
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+.section-vision{
+    background-color: #ffedd1;
+}
+.fond{
+  background-color: #f0ebe4;
+  margin-left:-7%;
+  margin-right:-7%;
+  padding-left: 7%;
+}
+ .texte{ 
+    line-height: 121%
+}
+h2{
+    margin-bottom: 5%;
+      font-size: 333%;
+      margin-left: 10%;
+      text-align: center;
+}
+/* Style de la citation avec la barre marron */
+.citation {
+     border-left: 4px solid #8b5a2b; /*La barre verticale */
+    padding-left: 20px;
+    margin-top: 3%;
+    font-style: italic;
+    color: #555;
+    font-size: 99%;
+    background-color: #f0ebe4;
+    padding: 0.5%;
+}
+
+/* Alignement des chiffres en bas */
+.experience {
+     display: flex;
+    justify-content:left;
+    gap: 10%;
+    margin-top: 50px;
+    
+}
+
+.nombre {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20%;
+    margin-left: 33%;
+}
+
+.experience2 {
+    letter-spacing: 1.5px;
+    line-height: 199%
+}
+/* .boutons, {
+
+} */
+/* .button:hover { 
+} */
+
+.intro {
+    flex-wrap: wrap;
+}
+.section-vision {
+    background-color: #ffedd1; /* Fond gris clair comme sur l'image */
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+.grand-titre {
+    font-size: 2.5rem;
+    font-family: serif;
+    margin-bottom: 40px;
+    color: #333;
+}
+.visionetmission {
+    display: flex;
+    justify-content: center;
+    gap: 55px; /* Espace entre les deux blocs */
+    flex-wrap: wrap; /* S'adapte sur mobile */
+}
+
+/* Style de chaque carte individuelle */
+.vimi {
+    background-color: #ffffff; /* Fond blanc pur */
+    padding: 40px 30px;
+    border-radius: 12px; /* Coins arrondis */
+    width: 400px;
+    text-align: left;
+    /* L'ombre qui donne l'effet de profondeur */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
+
+.vimi h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-family:'Serif', sans-serif; ;
+}
+
+.texte {
+    line-height: 1.6;
+    color: #666;
+    font-size:99%;
+}
+.realisations{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    border: 20px rgb(0, 0, 0);
+}
+.realisations img{
+height: 221px;
+width:333px;
+
+}
+.realisations p{
+    text-align: center;
+}
+.lien{
+
+}
+
+.lien {
+    border: 3px solid #ee8905; /*pour le trait dorée */
+    padding: 1px;  /*pour que l'image ne colle pas aux bords */
+    background-color: #000; /* pour mettre le fond rectancle en noir */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* pour que le texte soit en bas de l'image et que ca s'aligne */
+    justify-content: space-between;
+    border-radius: 2%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+.lien p {
+    color: #f1c32c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 95%;
+    text-transform: uppercase;  /*pour que le texte soit automatiquement en majuscule */
+    font-style: italic;
+    margin-bottom: 12%;
+    text-overflow: clip;
+}
+/* .contact{
+    display: flex;
+} 
+.contact p{
+margin-left: 1%;
+margin-bottom: 10%;
+}
+.contact img{
+height: 33px;
+width: 33px;
+}*/
+
+.contact-section{
+ justify-content: left;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: left;
+    gap: 133px;
+    max-width: 1000px;
+    /* margin: 0 auto; */
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    margin-left: 10%;
+    line-height: 133%;
+    font-size: 133%;
+}
+
+/* Style du formulaire */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+/* Le bouton marron spécifique */
+.contact-form button {
+    background-color: #8b5a2b; /* Ta couleur fétiche */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #6d4622; /* Un peu plus foncé au survol */
+}
+.liste-contact{
+    display: block;
+}
+footer{
+    background-color: #5C4A3A;
+    height:33px;
+    font-size: 111%;
+    text-align: center;
+    padding: 30px;
+}
