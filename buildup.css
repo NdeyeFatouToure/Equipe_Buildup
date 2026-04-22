@@ -6,7 +6,15 @@ body {
     padding: 0; /* Supprime les espaces internes */
     box-sizing: border-box; /* Inclut padding + border dans la taille */
 }
-
+html,body {
+    width: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box; /* Assure que padding et border sont inclus dans la taille */
+}
 /*CONTENEUR PRINCIPAL */
 
 .container {
@@ -28,13 +36,9 @@ body {
 
 .header {
  
-    display: flex;
+    
     background:#E8DDD0; /* Beige clair comme l'image */
-    align-items: center;
-    gap: 30px;
-   
     display: flex;/* Met les éléments en ligne */
-    background: #e6e0db;
     align-items: center;/* Centre verticalement */
     gap: 100px; /* Espace entre les éléments */
 
@@ -61,13 +65,14 @@ body {
 }
 .titre p{
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
 }
 .titre h1 {
     font-size: 5rem;
     color: #8B6F47;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Ombre */
     margin: 20px 0;
+    
 }
 
 
